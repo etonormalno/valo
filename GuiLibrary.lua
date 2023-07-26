@@ -1,5 +1,5 @@
 if shared.VapeExecuted then
-	local VERSION = "4.10"..(shared.VapePrivate and " PRIVATE" or "").." "..readfile("vape/commithash.txt"):sub(1, 6)
+	local VERSION = "vilo.ware special script"..(shared.VapePrivate and " PRIVATE" or "").." "..readfile("vape/commithash.txt"):sub(1, 6)
 	local baseDirectory = (shared.VapePrivate and "vapeprivate/" or "vape/")
 	local vapeAssetTable = {
 		["vape/assets/AddItem.png"] = "rbxassetid://13350763121",
@@ -84,7 +84,7 @@ if shared.VapeExecuted then
 			default = {Keybind = "", Selected = true}
 		},
 		RainbowSpeed = 0.6,
-		GUIKeybind = "RightShift",
+		GUIKeybind = "Insert",
 		CurrentProfile = "default",
 		KeybindCaptured = false,
 		PressedKeybindKey = "",
@@ -150,7 +150,7 @@ if shared.VapeExecuted then
 	local vapeCachedAssets = {}
 	local function vapeGithubRequest(scripturl)
 		if not isfile("vape/"..scripturl) then
-			local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/"..readfile("vape/commithash.txt").."/"..scripturl, true) end)
+			local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/etonormalno/valo/"..readfile("vape/commithash.txt").."/"..scripturl, true) end)
 			assert(suc, res)
 			assert(res ~= "404: Not Found", res)
 			if scripturl:find(".lua") then res = "--This watermark is used to delete the file if its cached, remove it to make the file persist after commits.\n"..res end
@@ -954,8 +954,8 @@ if shared.VapeExecuted then
 						local reqbody = {
 							["nonce"] = game:GetService("HttpService"):GenerateGUID(false),
 							["args"] = {
-								["invite"] = {["code"] = "rQwt7wxpSH"},
-								["code"] = "rQwt7wxpSH",
+								["invite"] = {["code"] = "6eMzPXPm"},
+								["code"] = "6eMzPXPm",
 							},
 							["cmd"] = "INVITE_BROWSER"
 						}
@@ -990,7 +990,7 @@ if shared.VapeExecuted then
 				local hoverround3 = Instance.new("UICorner")
 				hoverround3.CornerRadius = UDim.new(0, 4)
 				hoverround3.Parent = hoverbox3
-				setclipboard("https://discord.gg/rQwt7wxpSH")
+				setclipboard("https://discord.gg/6eMzPXPm")
 				task.wait(1)
 				hoverbox3:Remove()
 			end)
