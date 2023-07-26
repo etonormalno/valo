@@ -978,7 +978,7 @@ if shared.VapeExecuted then
 				local hoverbox3 = Instance.new("TextLabel")
 				hoverbox3.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 				hoverbox3.Active = false
-				hoverbox3.Text = "Discord set to clipboard!"
+				hoverbox3.Text = "copu"
 				hoverbox3.ZIndex = 5
 				hoverbox3.Size = UDim2.new(0, 13 + hover3textsize.X, 0, hover3textsize.Y + 5)
 				hoverbox3.TextColor3 = Color3.fromRGB(200, 200, 200)
