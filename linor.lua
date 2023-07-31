@@ -1,6 +1,6 @@
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
-local CoreGui = game.CoreGui;
+local CoreGui = "msdrop";
 local Teams = game:GetService('Teams');
 local Players = game:GetService('Players');
 local RunService = game:GetService('RunService')
@@ -13,6 +13,8 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 
 local ScreenGui = Instance.new('ScreenGui');
 ProtectGui(ScreenGui);
+
+print(CoreGui)
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 --ScreenGui.Parent = CoreGui;
